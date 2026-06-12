@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="高知県香南市の海辺に近い田んぼ・畑・ハウスで、ピーマンとお米を育てるNishinouchi Farmです。">
+  <title>Nishinouchi Farm | 高知県香南市の農園</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html" aria-label="Nishinouchi Farm ホーム">
+        <span class="logo-mark" aria-hidden="true">NF</span>
+        <span class="logo-text"><strong>Nishinouchi Farm</strong><small>KONAN, KOCHI</small></span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">
+        <span></span><span></span><span></span><span class="sr-only">メニューを開く</span>
+      </button>
+      <nav class="global-nav" id="global-nav" aria-label="メインナビゲーション">
+        <ul>
+          <li><a href="about.html"><span class="nav-icon-placeholder icon-farm" aria-hidden="true"></span><span>農園について</span></a></li>
+          <li class="has-dropdown">
+            <a href="products.html"><span class="nav-icon-placeholder icon-crops" aria-hidden="true"></span><span>作物について</span></a>
+            <button class="dropdown-button" type="button" aria-expanded="false"><span class="sr-only">作物メニューを開く</span></button>
+            <ul class="dropdown">
+              <li><a href="products.html#pepper">ピーマン</a></li>
+              <li><a href="products.html#rice">お米</a></li>
+            </ul>
+          </li>
+          <li><a href="shop-contact.html#shop"><span class="nav-icon-placeholder icon-shop" aria-hidden="true"></span><span>お買いもの</span></a></li>
+          <li><a href="shop-contact.html#contact"><span class="nav-icon-placeholder icon-contact" aria-hidden="true"></span><span>お問い合わせ</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-photo photo-placeholder photo-farm" role="img" aria-label="海辺に近い田畑とハウスの写真を入れる場所"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Nishinouchi Farm / Kochi</p>
+        <h1>高知の海風と育てる、<br>ピーマンとお米。</h1>
+        <p>高知県香南市の海辺に近い田んぼ・畑・ハウスで、日々の食卓につながる作物を丁寧に育てています。</p>
+        <div class="button-row">
+          <a class="button button-primary" href="products.html">作物を見る</a>
+          <a class="text-link" href="about.html">農園について知る</a>
+        </div>
+      </div>
+      <p class="hero-caption">海風を感じる土地から、まっすぐに。</p>
+    </section>
+
+    <!-- お知らせを更新する場合は、下記の文章を編集してください。 -->
+    <aside class="news-ticker" aria-label="お知らせ">
+      <p class="ticker-label">NEWS</p>
+      <div class="ticker-window">
+        <div class="ticker-track">
+          <span>ピーマンの販売時期は10月頃から翌年6月頃までです</span>
+          <span>メルカリに家庭用ピーマンを入荷しました</span>
+          <span>お米の販売情報は順次お知らせします</span>
+          <span aria-hidden="true">ピーマンの販売時期は10月頃から翌年6月頃までです</span>
+          <span aria-hidden="true">メルカリに家庭用ピーマンを入荷しました</span>
+          <span aria-hidden="true">お米の販売情報は順次お知らせします</span>
+        </div>
+      </div>
+    </aside>
+
+    <section class="section intro-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">From our fields</p>
+        <h2>農家の手から、<br>いつもの食卓へ。</h2>
+      </div>
+      <div class="intro-copy reveal">
+        <p>Nishinouchi Farmの主役は、つややかなピーマンと、日々のごはんに寄り添うお米。育つ環境をよく見ながら、ひとつひとつ誠実に向き合っています。</p>
+        <a class="text-link" href="about.html">私たちの農業について</a>
+      </div>
+    </section>
+
+    <section class="section crops-section" aria-labelledby="crops-title">
+      <div class="section-heading centered reveal">
+        <p class="eyebrow">Our crops</p>
+        <h2 id="crops-title">ふたつの大切な作物</h2>
+      </div>
+      <div class="crop-grid">
+        <article class="crop-card reveal">
+          <div class="photo-placeholder photo-pepper" role="img" aria-label="収穫したピーマンの写真を入れる場所"></div>
+          <div class="crop-card-body">
+            <p class="card-number">01 / PEPPER</p>
+            <h3>ピーマン</h3>
+            <p>10月頃から翌年6月頃まで、ハウスでじっくり長期栽培。新鮮な味を農家から直接お届けします。</p>
+            <a class="text-link" href="products.html#pepper">ピーマンについて</a>
+          </div>
+        </article>
+        <article class="crop-card reveal">
+          <div class="photo-placeholder photo-rice" role="img" aria-label="田んぼとお米の写真を入れる場所"></div>
+          <div class="crop-card-body">
+            <p class="card-number">02 / RICE</p>
+            <h3>お米</h3>
+            <p>季節の移ろいを感じる田んぼで、毎日の食卓に似合うお米を丹精込めて育てています。</p>
+            <a class="text-link" href="products.html#rice">お米について</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section feature-band">
+      <div class="feature-photo photo-placeholder photo-house reveal" role="img" aria-label="ピーマンハウスでの作業風景を入れる場所"></div>
+      <div class="feature-copy reveal">
+        <p class="eyebrow">Thoughtful growing</p>
+        <h2>自然の力も借りながら、<br>育つ環境を整える。</h2>
+        <p>害虫の天敵となる生きものの力を活用し、農薬だけに頼りすぎない栽培環境づくりに取り組んでいます。</p>
+        <a class="button button-outline" href="about.html#approach">栽培への取り組み</a>
+      </div>
+    </section>
+
+    <section class="section shop-callout reveal">
+      <div>
+        <p class="eyebrow">Farm to table</p>
+        <h2>旬の味を、農家から直接。</h2>
+        <p>販売中の商品と時期は、メルカリページでご確認いただけます。</p>
+      </div>
+      <a class="button button-light" href="https://jp.mercari.com/user/profile/307717731?utm_medium=share&amp;utm_source=ios" target="_blank" rel="noopener noreferrer">メルカリで販売中の商品を見る</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="site-logo footer-logo" href="index.html"><span class="logo-mark" aria-hidden="true">NF</span><span class="logo-text"><strong>Nishinouchi Farm</strong><small>KONAN, KOCHI</small></span></a>
+      <p>高知県香南市の海辺に近い田んぼ・畑・ハウスで、ピーマンとお米を育てています。</p>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <a href="about.html">農園について</a><a href="products.html">作物について</a><a href="shop-contact.html">お買いもの・お問い合わせ</a>
+      </nav>
+      <a class="instagram-link is-placeholder" href="#" aria-label="Instagram（URL設定前）">Instagram</a>
+    </div>
+    <p class="copyright"><small>&copy; Nishinouchi Farm</small></p>
+  </footer>
+</body>
+</html>
