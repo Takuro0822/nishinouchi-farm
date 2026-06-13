@@ -47,7 +47,9 @@ h1, h2, h3 {
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-weight: 500;
   letter-spacing: 0.08em;
+  line-break: strict;
   line-height: 1.55;
+  text-wrap: balance;
 }
 h1 { font-size: var(--heading-hero); }
 h2 { font-size: var(--heading-section); }
@@ -472,6 +474,7 @@ h3 { font-size: 1.25rem; }
   h1, .hero-copy h1, .about-hero .page-hero-copy h1, .simple-page-hero h1 { font-size: clamp(1.6rem, calc(10vw - 14px), 2.5rem); }
   h2 { font-size: clamp(1.9rem, 10vw, 2.7rem); }
   .feature-copy h2, .environment-copy h2, .shop-callout h2 { font-size: 1.6rem; }
+  .story-section h2, .approach-section h2, .next-link h2 { font-size: 1.9rem; }
   .logo-text strong { font-size: 1.35rem; }
   .hero { min-height: 39rem; }
   .hero-caption { display: none; }
