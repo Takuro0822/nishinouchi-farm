@@ -206,6 +206,10 @@ h3 { font-size: 1.25rem; }
   transform: translateY(-2px);
 }
 .icon-farm { background-image: url("assets/icons/nav-farm.png?v=3"); }
+.icon-home {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23315c46' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 48 50 22l30 26v31H20Z'/%3E%3Cpath d='M40 79V57h20v22M32 40V25h12'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 82%;
+}
 .icon-crops { background-image: url("assets/icons/nav-crops.png?v=3"); }
 .icon-shop { background-image: url("assets/icons/nav-shop.png?v=3"); }
 .icon-contact { background-image: url("assets/icons/nav-contact.png?v=3"); }
@@ -452,6 +456,7 @@ h3 { font-size: 1.25rem; }
   .has-dropdown.is-open .dropdown { display: block; }
   .hero { width: calc(100% - 2rem); min-height: 42rem; margin-top: 1rem; }
   .hero-photo { inset: 0; }
+  .photo-farm { background-position: 61% center; }
   .hero-photo::before { background: linear-gradient(90deg, rgba(27,50,36,.7), rgba(27,50,36,.1)); }
   .hero-copy { width: 100%; padding: 7rem 1.5rem 5rem; }
   .news-ticker { width: calc(100% - 2rem); }
