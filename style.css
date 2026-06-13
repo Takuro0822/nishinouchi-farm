@@ -161,6 +161,7 @@ h3 { font-size: 1.25rem; }
   align-items: center;
   gap: 0;
   list-style: none;
+  background: #fff;
 }
 .global-nav > ul > li {
   position: relative;
@@ -189,8 +190,10 @@ h3 { font-size: 1.25rem; }
 .global-nav a:not(.nav-cta):hover, .global-nav a.is-current:not(.nav-cta) { color: var(--soil); }
 .nav-icon-placeholder {
   display: block;
-  width: 4.2rem;
-  height: 3.8rem;
+  width: 6.3rem;
+  height: 5.7rem;
+  flex: 0 0 auto;
+  background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 165%;
@@ -426,9 +429,9 @@ h3 { font-size: 1.25rem; }
   .menu-button[aria-expanded="true"] > span:nth-child(1) { transform: translateY(5px) rotate(45deg); }
   .menu-button[aria-expanded="true"] > span:nth-child(2) { opacity: 0; }
   .menu-button[aria-expanded="true"] > span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
-  .global-nav { position: absolute; top: 100%; left: 0; width: 100%; max-height: 0; overflow: hidden; background: var(--cream); transition: max-height .3s ease; }
+  .global-nav { position: absolute; top: 100%; left: 0; width: 100%; max-height: 0; overflow: hidden; background: #fff; transition: max-height .3s ease; }
   .global-nav.is-open { max-height: calc(100vh - 4.5rem); overflow-y: auto; border-bottom: 1px solid var(--line); }
-  .global-nav > ul { display: block; padding: 1rem; }
+  .global-nav > ul { display: block; padding: 1rem; background: #fff; }
   .global-nav > ul > li { min-width: 0; }
   .global-nav > ul > li + li::before { display: none; }
   .global-nav a {
@@ -440,7 +443,7 @@ h3 { font-size: 1.25rem; }
     border-bottom: 1px solid var(--line);
     text-align: left;
   }
-  .nav-icon-placeholder { width: 2.25rem; height: 2rem; flex: 0 0 auto; transform: scale(.82); }
+  .nav-icon-placeholder { width: 4.75rem; height: 4.3rem; flex: 0 0 auto; transform: none; }
   .dropdown-button { top: 1.1rem; right: 1rem; transform: none; }
   .global-nav .dropdown { position: static; display: none; min-width: 0; padding: 0 0 0 3rem; visibility: visible; border: 0; background: transparent; box-shadow: none; opacity: 1; transform: none; }
   .global-nav .dropdown a { padding: .65rem 1rem; }
