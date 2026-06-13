@@ -128,7 +128,7 @@ h3 { font-size: 1.25rem; }
   top: 0;
   z-index: 50;
   border-bottom: 1px solid var(--line);
-  background: rgba(247, 244, 235, 0.94);
+  background: rgba(255, 255, 255, 0.97);
   backdrop-filter: blur(14px);
 }
 .header-inner {
@@ -194,17 +194,16 @@ h3 { font-size: 1.25rem; }
   background-position: center;
   background-repeat: no-repeat;
   background-size: 165%;
-  mix-blend-mode: multiply;
   transition: transform 0.25s;
 }
 .global-nav a:hover .nav-icon-placeholder,
 .global-nav a:focus-visible .nav-icon-placeholder {
   transform: translateY(-2px);
 }
-.icon-farm { background-image: url("assets/icons/nav-farm.png?v=2"); }
-.icon-crops { background-image: url("assets/icons/nav-crops.png?v=2"); }
-.icon-shop { background-image: url("assets/icons/nav-shop.png?v=2"); }
-.icon-contact { background-image: url("assets/icons/nav-contact.png?v=2"); }
+.icon-farm { background-image: url("assets/icons/nav-farm.png?v=3"); }
+.icon-crops { background-image: url("assets/icons/nav-crops.png?v=3"); }
+.icon-shop { background-image: url("assets/icons/nav-shop.png?v=3"); }
+.icon-contact { background-image: url("assets/icons/nav-contact.png?v=3"); }
 .has-dropdown { position: relative; }
 .dropdown-button {
   position: absolute;
@@ -237,7 +236,7 @@ h3 { font-size: 1.25rem; }
   padding: 0.5rem;
   visibility: hidden;
   border: 1px solid var(--line);
-  background: var(--white);
+  background: #fff;
   box-shadow: var(--shadow);
   list-style: none;
   opacity: 0;
