@@ -206,7 +206,10 @@ h3 { font-size: 1.25rem; }
   transform: translateY(-2px);
 }
 .icon-farm { background-image: url("assets/icons/nav-farm.png?v=3"); }
-.icon-home { background-image: url("assets/icons/nav-home.png?v=2"); }
+.icon-home {
+  background-image: url("assets/icons/nav-home.png?v=2");
+  background-size: 245%;
+}
 .icon-crops { background-image: url("assets/icons/nav-crops.png?v=3"); }
 .icon-shop { background-image: url("assets/icons/nav-shop.png?v=3"); }
 .icon-contact { background-image: url("assets/icons/nav-contact.png?v=3"); }
