@@ -10,6 +10,11 @@
   --shadow: 0 22px 60px rgba(43, 62, 50, 0.12);
   --radius: 2px;
   --max-width: 1180px;
+  --text-size: 1rem;
+  --heading-hero: clamp(1.8rem, calc(3.8vw - 22px), 2.425rem);
+  --heading-section: clamp(2rem, 4vw, 3.4rem);
+  --heading-concept: clamp(1.6rem, calc(4vw - 14px), 2.5rem);
+  --heading-feature: clamp(1.8rem, calc(4vw - 6px), 3rem);
 }
 
 * { box-sizing: border-box; }
@@ -21,9 +26,9 @@ body {
     linear-gradient(180deg, rgba(220, 233, 232, 0.22), transparent 24rem),
     var(--cream);
   font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  font-size: 1.15rem;
+  font-size: var(--text-size);
   line-height: 1.9;
-  letter-spacing: 0.045em;
+  letter-spacing: 0.04em;
 }
 body::before {
   position: fixed;
@@ -44,9 +49,9 @@ h1, h2, h3 {
   letter-spacing: 0.08em;
   line-height: 1.55;
 }
-h1 { font-size: clamp(2.5rem, 5vw, 5.5rem); }
-h2 { font-size: clamp(2rem, 3.4vw, 3.4rem); }
-h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); }
+h1 { font-size: var(--heading-hero); }
+h2 { font-size: var(--heading-section); }
+h3 { font-size: 1.25rem; }
 .sr-only {
   position: absolute;
   width: 1px;
@@ -147,7 +152,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); }
   font-size: 0.8rem;
 }
 .logo-text { display: grid; gap: 0.25rem; }
-.logo-text strong { font-family: Georgia, serif; font-size: 1rem; letter-spacing: 0.05em; }
+.logo-text strong { font-family: Georgia, "Times New Roman", "Yu Mincho", serif; font-size: clamp(2rem, 3vw, 2.8rem); letter-spacing: 0.05em; white-space: nowrap; }
 .logo-text small { color: var(--soil); font-family: Arial, sans-serif; font-size: 0.55rem; letter-spacing: 0.23em; }
 .global-nav > ul {
   display: flex;
@@ -196,10 +201,10 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); }
 .global-nav a:focus-visible .nav-icon-placeholder {
   transform: translateY(-2px);
 }
-.icon-farm { background-image: url("assets/icons/nav-farm.png"); }
-.icon-crops { background-image: url("assets/icons/nav-crops.png"); }
-.icon-shop { background-image: url("assets/icons/nav-shop.png"); }
-.icon-contact { background-image: url("assets/icons/nav-contact.png"); }
+.icon-farm { background-image: url("assets/icons/nav-farm.png?v=2"); }
+.icon-crops { background-image: url("assets/icons/nav-crops.png?v=2"); }
+.icon-shop { background-image: url("assets/icons/nav-shop.png?v=2"); }
+.icon-contact { background-image: url("assets/icons/nav-contact.png?v=2"); }
 .has-dropdown { position: relative; }
 .dropdown-button {
   position: absolute;
@@ -297,7 +302,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); }
   text-shadow: 0 1px 18px rgba(20, 40, 28, 0.2);
 }
 .hero-copy .eyebrow { color: #f2e6d5; }
-.hero-copy h1 { font-size: clamp(1.8rem, 3vw, 3rem); }
+.hero-copy h1 { font-size: var(--heading-hero); }
 .hero-copy p:not(.eyebrow) { max-width: 32rem; }
 .hero-copy .text-link { border-color: white; }
 .hero-caption {
@@ -309,9 +314,9 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); }
   padding: 0.9rem 1.4rem;
   color: white;
   background: rgba(49, 92, 70, 0.86);
-  font-size: 1.35rem;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  letter-spacing: 0.08em;
+  font-size: 0.86rem;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  letter-spacing: 0.04em;
 }
 .news-ticker { display: flex; width: min(calc(100% - 3rem), 1400px); margin: 0 auto; color: white; background: var(--green); }
 .ticker-label { flex: 0 0 auto; margin: 0; padding: 0.75rem 1.2rem; border-right: 1px solid rgba(255,255,255,.3); font-size: .7rem; font-weight: 700; letter-spacing: .2em; }
@@ -331,24 +336,24 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); }
 .feature-band { display: grid; grid-template-columns: 1.15fr .85fr; width: min(calc(100% - 3rem), 1400px); padding-inline: clamp(0rem, 4vw, 4rem); align-items: center; background: var(--green-light); }
 .feature-photo { min-height: 34rem; }
 .feature-copy { padding: clamp(2rem, 7vw, 6rem); }
-.feature-copy h2 { font-size: clamp(1rem, 1.2vw, 1.3rem); }
+.feature-copy h2 { font-size: var(--heading-feature); }
 .feature-copy p:not(.eyebrow) { max-width: 32rem; }
 .shop-callout { display: flex; width: min(calc(100% - 3rem), var(--max-width)); margin-bottom: 7rem; padding: clamp(2.5rem, 6vw, 5rem); align-items: center; justify-content: space-between; gap: 2rem; color: white; background: var(--green); }
-.shop-callout h2 { margin-bottom: .5rem; font-size: clamp(1rem, 1.15vw, 1.2rem); }
+.shop-callout h2 { margin-bottom: .5rem; font-size: var(--heading-concept); }
 .shop-callout p:last-child { margin-bottom: 0; }
 .shop-callout .eyebrow { color: #d7c4a7; }
 
 /* Page common */
 .page-hero { display: grid; grid-template-columns: .8fr 1.2fr; width: min(calc(100% - 3rem), 1400px); min-height: 38rem; margin: 1.5rem auto 0; background: var(--green-light); }
 .page-hero-copy { align-self: center; padding: clamp(3rem, 7vw, 7rem); }
-.about-hero .page-hero-copy h1 { font-size: clamp(1.25rem, 1.65vw, 1.65rem); }
+.about-hero .page-hero-copy h1 { font-size: var(--heading-hero); }
 .page-hero-copy p:last-child { max-width: 30rem; }
 .page-hero-photo { min-height: 28rem; }
 .story-section { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(3rem, 10vw, 10rem); }
 .story-copy { max-width: 38rem; }
 .environment-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(3rem, 8vw, 7rem); align-items: center; }
 .environment-photo { min-height: 34rem; }
-.environment-copy h2 { font-size: clamp(1.45rem, 2vw, 2rem); }
+.environment-copy h2 { font-size: var(--heading-concept); }
 .fact-list { margin: 2.5rem 0 0; border-top: 1px solid var(--line); }
 .fact-list div, .sample-card dl div { display: grid; grid-template-columns: 8rem 1fr; padding: .85rem 0; border-bottom: 1px solid var(--line); }
 .fact-list dt, .sample-card dt { color: var(--soil); font-size: .75rem; font-weight: 700; }
@@ -380,7 +385,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); }
 
 /* Shop and contact */
 .simple-page-hero { width: min(calc(100% - 3rem), 52rem); margin: 0 auto; padding: clamp(6rem, 12vw, 11rem) 0 clamp(3rem, 7vw, 6rem); text-align: center; }
-.simple-page-hero h1 { font-size: clamp(1.25rem, 1.65vw, 1.65rem); }
+.simple-page-hero h1 { font-size: var(--heading-hero); }
 .shop-section { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(3rem, 8vw, 7rem); align-items: center; }
 .shop-section, .contact-section { scroll-margin-top: 8rem; }
 .shop-visual { min-height: 34rem; }
@@ -461,10 +466,11 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); }
 }
 
 @media (max-width: 600px) {
-  body { font-size: 1.05rem; }
-  h1 { font-size: clamp(2.25rem, 13vw, 3.5rem); }
-  h2 { font-size: 1.85rem; }
-  .logo-text strong { font-size: .85rem; }
+  body { font-size: .9375rem; }
+  h1, .hero-copy h1, .about-hero .page-hero-copy h1, .simple-page-hero h1 { font-size: clamp(1.6rem, calc(10vw - 14px), 2.5rem); }
+  h2 { font-size: clamp(1.9rem, 10vw, 2.7rem); }
+  .feature-copy h2, .environment-copy h2, .shop-callout h2 { font-size: 1.6rem; }
+  .logo-text strong { font-size: 1.35rem; }
   .hero { min-height: 39rem; }
   .hero-caption { display: none; }
   .ticker-label { display: none; }
