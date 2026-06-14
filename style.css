@@ -475,23 +475,77 @@ h3 { font-size: 1.25rem; }
 }
 
 @media (max-width: 600px) {
-  body { font-size: .9375rem; }
+  body { font-size: .9375rem; line-height: 1.8; }
   h1, .hero-copy h1, .about-hero .page-hero-copy h1, .simple-page-hero h1 { font-size: clamp(1.6rem, calc(10vw - 14px), 2.5rem); }
   h2 { font-size: clamp(1.9rem, 10vw, 2.7rem); }
   .feature-copy h2, .environment-copy h2, .shop-callout h2 { font-size: 1.6rem; }
   .story-section h2, .approach-section h2, .next-link h2 { font-size: 1.9rem; }
+  h1, h2, h3 { line-height: 1.45; letter-spacing: .045em; text-wrap: pretty; }
+  p { margin-bottom: 1rem; }
   .logo-text strong { font-size: 1.35rem; }
-  .hero { min-height: 39rem; }
+  .section { padding-block: 3.25rem; }
+  .section-heading { max-width: 22rem; }
+  .section-heading.centered { text-align: left; }
+  .eyebrow { margin-bottom: .65rem; }
+  .button-row { gap: .75rem 1rem; margin-top: 1.5rem; }
+
+  .hero { min-height: 36rem; }
+  .hero-copy { padding: 5.5rem 1.5rem 3.75rem; }
+  .hero-copy p:not(.eyebrow) { max-width: 19rem; }
   .hero-caption { display: none; }
   .ticker-label { display: none; }
+  .ticker-track span { padding: .65rem 1.5rem; }
+
+  .intro-section, .story-section, .environment-grid, .product-detail, .shop-section, .contact-section {
+    gap: 1.75rem;
+  }
+  .crop-grid { gap: 1.25rem; margin-top: 2rem; }
+  .crop-card-body { padding: 1.5rem; }
+  .crop-card-body p:last-of-type { margin-bottom: .75rem; }
+  .feature-photo, .environment-photo, .product-main-photo, .shop-visual { min-height: 18rem; }
+  .feature-copy { padding: 2rem 1.5rem 2.25rem; }
+  .feature-copy .button { margin-top: .25rem; }
+
+  .page-hero { min-height: 0; margin-top: 1rem; }
+  .page-hero-photo { min-height: 17rem; }
+  .page-hero-copy { padding: 2rem 1.5rem 2.25rem; }
+  .page-hero-copy p:last-child { margin-bottom: 0; }
+
+  .fact-list { margin-top: 1.5rem; }
+  .approach-grid { gap: .75rem; margin-top: 2rem; }
+  .approach-card { min-height: 0; padding: 1.5rem; }
+  .approach-card span { font-size: 2rem; }
+  .approach-card h3 { margin-bottom: .6rem; }
+  .approach-card p { margin-bottom: 0; }
+  .result-band { padding: 2.75rem 1rem; }
+  .next-link { padding-block: 3rem; }
+
+  .crop-anchor-nav { margin-top: 2rem; }
   .crop-anchor-nav, .sample-grid { grid-template-columns: 1fr; }
+  .crop-anchor-nav a { padding: .85rem 1.25rem; }
   .crop-anchor-nav a + a { border-top: 1px solid var(--line); border-left: 0; }
+  .product-detail { row-gap: 1.75rem; }
+  .product-points { gap: .75rem; }
+  .point-card { padding: 1.35rem 1.5rem; }
+  .point-card h3 { margin-bottom: .5rem; }
+  .point-card p { margin-bottom: 0; }
+  .use-band { padding: 1.5rem; }
+  .rice-note { padding: 1.5rem; text-align: left; }
+
+  .simple-page-hero { padding: 4rem 0 2.5rem; text-align: left; }
+  .sample-products { padding-top: 2.5rem; }
+  .sample-grid { gap: .9rem; margin-top: 1.75rem; }
+  .sample-card { padding: 1.5rem; }
+  .purchase-note { margin-top: 1.25rem; padding: 1.25rem; }
   .shop-callout, .social-band { align-items: stretch; flex-direction: column; text-align: left; }
+  .shop-callout { margin-bottom: 3.5rem; padding: 2rem 1.5rem; }
   .shop-callout .button, .social-band .button { width: 100%; }
+  .social-band { padding: 1.75rem 1.5rem; }
   .use-list { grid-template-columns: 1fr; }
   .fact-list div, .sample-card dl div { grid-template-columns: 6.5rem 1fr; }
   .contact-form { padding: 1.5rem; }
-  .footer-main { grid-template-columns: 1fr; padding-block: 3rem; }
+  .form-field { margin-bottom: 1.15rem; }
+  .footer-main { grid-template-columns: 1fr; padding-block: 2.5rem; gap: 1.5rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
