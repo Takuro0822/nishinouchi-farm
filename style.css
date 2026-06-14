@@ -282,16 +282,16 @@ h3 { font-size: 1.25rem; }
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0 -5px 0 rgba(255, 255, 255, 0.42), 0 -10px 0 rgba(255, 255, 255, 0.2);
 }
-.photo-farm { background-image: url("assets/images/home-hero.png"); background-position: center; }
-.photo-pepper { background-image: url("assets/images/home-pepper.png"); background-position: center 52%; }
+.photo-farm { background-image: url("assets/images/home-hero-miogi.png"); background-position: center; }
+.photo-pepper { background-image: url("assets/images/home-pepper-miogi.png"); background-position: center 52%; }
 .photo-rice { background-image: url("assets/images/home-rice.png"); background-position: center 58%; }
-.photo-house { background-image: url("assets/images/home-greenhouse.png"); background-position: 35% center; }
+.photo-house { background-image: url("assets/images/home-greenhouse-miogi.png"); background-position: 35% center; }
 .photo-field { background-image: url("assets/images/about-hero.png"); background-position: center 65%; }
 .photo-sea-field { background-image: url("assets/images/about-landscape.png"); background-position: center; }
-.photo-crops { background-image: url("assets/images/products-hero.png"); background-position: center 58%; }
-.photo-pepper-detail { background-image: url("assets/images/products-pepper.png"); background-position: center; }
+.photo-crops { background-image: url("assets/images/products-hero-miogi.png"); background-position: center 58%; }
+.photo-pepper-detail { background-image: url("assets/images/products-pepper-miogi.png"); background-position: center; }
 .photo-rice-detail { background-image: url("assets/images/products-rice.png"); background-position: center; }
-.photo-box { background-image: url("assets/images/shop-package.png"); background-position: center; }
+.photo-box { background-image: url("assets/images/shop-package-miogi.png"); background-position: center; }
 
 /* Home */
 .hero {
@@ -422,6 +422,8 @@ h3 { font-size: 1.25rem; }
 .footer-main > p { max-width: 27rem; font-size: .8rem; }
 .footer-nav { display: grid; align-content: start; gap: .5rem; }
 .footer-nav a, .instagram-link { font-size: .75rem; }
+.phone-link { white-space: nowrap; }
+.footer-phone { align-self: start; color: #e8eee8; font-size: .8rem; text-decoration: underline; text-underline-offset: .3rem; }
 .instagram-link { grid-column: 3; color: #c9b391; text-decoration: underline; text-underline-offset: .3rem; }
 .copyright { width: min(calc(100% - 3rem), var(--max-width)); margin: 0 auto; padding: 1rem 0; border-top: 1px solid rgba(255,255,255,.12); color: #9aaba0; font-family: Arial, sans-serif; letter-spacing: .14em; }
 .is-placeholder { cursor: not-allowed; }
@@ -479,6 +481,10 @@ h3 { font-size: 1.25rem; }
 
 @media (max-width: 600px) {
   body { font-size: .9375rem; line-height: 1.8; }
+  main p { word-break: auto-phrase; text-wrap: pretty; }
+  .page-hero-copy p, .crop-card-body p, .environment-copy > p, .product-intro p, .rice-note p, .shop-callout p {
+    letter-spacing: .02em;
+  }
   h1, .hero-copy h1, .about-hero .page-hero-copy h1, .simple-page-hero h1 { font-size: clamp(1.6rem, calc(10vw - 14px), 2.5rem); }
   h2 { font-size: clamp(1.65rem, 7.2vw, 1.9rem); }
   .feature-copy h2, .environment-copy h2, .shop-callout h2 { font-size: 1.6rem; }
