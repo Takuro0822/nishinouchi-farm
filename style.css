@@ -48,6 +48,7 @@ h1, h2, h3 {
   font-weight: 500;
   letter-spacing: 0.08em;
   line-break: strict;
+  word-break: auto-phrase;
   line-height: 1.55;
   text-wrap: balance;
 }
@@ -344,7 +345,7 @@ h3 { font-size: 1.25rem; }
 .feature-band { display: grid; grid-template-columns: 1.15fr .85fr; width: min(calc(100% - 3rem), 1400px); padding-inline: clamp(0rem, 4vw, 4rem); align-items: center; background: var(--green-light); }
 .feature-photo { min-height: 34rem; }
 .feature-copy { padding: clamp(2rem, 7vw, 6rem); }
-.feature-copy h2 { font-size: var(--heading-feature); }
+.feature-copy h2 { font-size: clamp(1.6rem, 2.3vw, 1.75rem); }
 .feature-copy p:not(.eyebrow) { max-width: 32rem; }
 .shop-callout { display: flex; width: min(calc(100% - 3rem), var(--max-width)); margin-bottom: 7rem; padding: clamp(2.5rem, 6vw, 5rem); align-items: center; justify-content: space-between; gap: 2rem; color: white; background: var(--green); }
 .shop-callout h2 { margin-bottom: .5rem; font-size: var(--heading-concept); }
@@ -358,6 +359,7 @@ h3 { font-size: 1.25rem; }
 .page-hero-copy p:last-child { max-width: 30rem; }
 .page-hero-photo { min-height: 28rem; }
 .story-section { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(3rem, 10vw, 10rem); }
+.story-section h2 { font-size: var(--heading-concept); }
 .story-copy { max-width: 38rem; }
 .environment-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(3rem, 8vw, 7rem); align-items: center; }
 .environment-photo { min-height: 34rem; }
@@ -381,6 +383,7 @@ h3 { font-size: 1.25rem; }
 .crop-anchor-nav a + a { border-left: 1px solid var(--line); }
 .crop-anchor-nav span { margin-right: 1rem; color: var(--soil); font-size: .7rem; }
 .product-detail { display: grid; grid-template-columns: .75fr 1.25fr; gap: clamp(2.5rem, 7vw, 7rem); scroll-margin-top: 7rem; }
+.product-intro h2, .shop-copy h2, .contact-intro h2, .social-band h2 { font-size: var(--heading-concept); }
 .product-main-photo { min-height: 38rem; }
 .product-points { display: grid; grid-column: 1 / -1; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 .point-card { padding: 2rem; border-top: 2px solid var(--green); background: var(--white); }
@@ -477,9 +480,10 @@ h3 { font-size: 1.25rem; }
 @media (max-width: 600px) {
   body { font-size: .9375rem; line-height: 1.8; }
   h1, .hero-copy h1, .about-hero .page-hero-copy h1, .simple-page-hero h1 { font-size: clamp(1.6rem, calc(10vw - 14px), 2.5rem); }
-  h2 { font-size: clamp(1.9rem, 10vw, 2.7rem); }
+  h2 { font-size: clamp(1.65rem, 7.2vw, 1.9rem); }
   .feature-copy h2, .environment-copy h2, .shop-callout h2 { font-size: 1.6rem; }
-  .story-section h2, .approach-section h2, .next-link h2 { font-size: 1.9rem; }
+  .story-section h2, .approach-section h2, .next-link h2 { font-size: 1.75rem; }
+  .product-intro h2, .shop-copy h2, .sample-products h2, .contact-intro h2, .social-band h2 { font-size: 1.75rem; }
   h1, h2, h3 { line-height: 1.45; letter-spacing: .045em; text-wrap: pretty; }
   p { margin-bottom: 1rem; }
   .logo-text strong { font-size: 1.35rem; }
