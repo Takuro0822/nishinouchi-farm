@@ -28,9 +28,11 @@ dropdownButtons.forEach((button) => {
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const revealItems = document.querySelectorAll(".reveal");
+const pathSteps = document.querySelectorAll(".flow-step");
 
 if (reduceMotion || !("IntersectionObserver" in window)) {
   revealItems.forEach((item) => item.classList.add("is-visible"));
+  pathSteps.forEach((item) => item.classList.add("is-path-visible"));
 } else {
   const observer = new IntersectionObserver(
     (entries, currentObserver) => {
@@ -45,6 +47,17 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
   );
 
   revealItems.forEach((item) => observer.observe(item));
+
+  const pathObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add("is-path-visible");
+      });
+    },
+    { threshold: 0.22 }
+  );
+
+  pathSteps.forEach((item) => pathObserver.observe(item));
 }
 
 document.querySelectorAll("a.is-placeholder").forEach((link) => {
